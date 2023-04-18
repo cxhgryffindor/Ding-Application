@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efe5df">
+
+        <DatePicker
+            android:id="@+id/datePickerAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#949C8F"
+            android:calendarViewShown="false"
+            android:datePickerMode="calendar"
+            android:headerBackground="#949C8F" />
+
+        <TextView
+            android:id="@+id/task_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Name:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_below="@id/datePickerAdd"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/taskNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/task_name_label"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:hint="Enter task name here"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/task_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Time:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_below="@id/taskNameEditText"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <TimePicker
+            android:id="@+id/taskTimePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/task_time_label"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:timePickerMode="spinner"/>
+
+        <TextView
+            android:id="@+id/reminder_switch_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Reminder:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_below="@id/taskTimePicker"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <Switch
+            android:id="@+id/reminderSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reminder_switch_label"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Button
+            android:id="@+id/confirmAddTaskButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:textColor="#FFFFFF"
+            android:background="#657163"
+            android:layout_below="@id/reminderSwitch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+    </RelativeLayout>
+
+</ScrollView>
