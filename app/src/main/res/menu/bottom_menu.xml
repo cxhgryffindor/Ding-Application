@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/calendar"
+        android:title="Main"/>
+    <item
+        android:id="@+id/bottom_focus"
+        android:icon="@drawable/focus"
+        android:title="Focus"/>
+    <item
+        android:id="@+id/bottom_profile"
+        android:icon="@drawable/profile_selected"
+        android:title="Profile"/>
+
+</menu>
